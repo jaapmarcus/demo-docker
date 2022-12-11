@@ -9,3 +9,5 @@ cp -r ./demo/ /var/lib/docker/volumes/root_fossbilling/_data/modules/Demo
 
 rm -fr var/lib/docker/volumes/root_fossbilling/_data/library/Registrar/Adapter/Email.php
 
+cat ~/demo.sql | docker exec -i root_mysql_1 mysql -proot exampledb >/dev/null 2>&1
+
